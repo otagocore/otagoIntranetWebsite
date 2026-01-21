@@ -9,7 +9,10 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-
+  sidebar: 
+    contents: 
+      - section: "ORCA Database"
+        contents: orcaDatabase/orcaDatabaseMain
 format:
   html:
     theme:
