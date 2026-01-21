@@ -2,26 +2,21 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "orcaIntranetWebsite",
+    "title": "mybook",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "orcaDatabase/orcaDatabaseMain.html",
-    "href": "orcaDatabase/orcaDatabaseMain.html",
-    "title": "ORCA Sample Management Database",
-    "section": "",
-    "text": "Introduction\nDatebase can only be accessed on-campus? at the following website https://orca.otago.nz/orca. This site provides an overview of the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\nThe view upon enetering the admin screen can be seen in",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "Home",
-      "ORCA Sample Management Database"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>orcaIntranetWebsite</span>"
+    ]
+  },
+  {
+    "objectID": "orcaDatabaseMain.html",
+    "href": "orcaDatabaseMain.html",
+    "title": "2  ORCA Sample Management Database",
+    "section": "",
+    "text": "3 Introduction\nDatebase can only be accessed on-campus? at the following website https://orca.otago.nz/orca. This site provides an overview of the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\n\n\n\n\n\n\nFigure 3.1: Introductory screen for the ORCA Sample Database\n\n\n\nThe view upon entering the admin screen can be seen in Figure 3.1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
     ]
   }
 ]

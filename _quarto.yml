@@ -1,27 +1,49 @@
+# project:
+#   type: website
+#   output-dir: docs
+  
+  
 project:
-  type: website
+  type: book
   output-dir: docs
 
-website:
-  title: "orcaIntranetWebsite"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: orcaDatabase/orcaDatabaseMain.qmd
-        text: "ORCA Database"
-      - about.qmd
-  sidebar: 
-    contents: 
-      - orcaDatabase/orcaDatabaseMain.qmd
+book:
+  title: "mybook"
+  author: "Jane Doe"
+  date: "8/18/2021"
+  chapters:
+    - index.qmd
+    - orcaDatabaseMain.qmd
+    - geotek.qmd
+
+
+
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
-    toc: true
-  pdf: 
-    toc: true
-editor: visual
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt  
+
+# website:
+#   title: "orcaIntranetWebsite"
+#   navbar:
+#     left:
+#       - href: index.qmd
+#         text: Home
+#       - href: orcaDatabase/orcaDatabaseMain.qmd
+#         text: "ORCA Database"
+#       - about.qmd
+#   sidebar: 
+#     contents: 
+#       - orcaDatabase/orcaDatabaseMain.qmd
+# format:
+#   html:
+#     theme:
+#       - cosmo
+#       - brand
+#     css: styles.css
+#     toc: true
+#   pdf: 
+#     toc: true
+# editor: visual
 
