@@ -1,3 +1,16 @@
 ---
-title: "Untitled"
+title: "ORCA Sample Management Database "
 ---
+
+# Introduction
+
+Datebase can only be accessed on-campus? at the following website <https://orca.otago.nz/orca>. This site provides an overview of the samples contained in the Sample Database.
+
+To enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following <https://orca.otago.nz/orca/admin>
+
+
+
+![Introductory screen for the ORCA Sample Database](C:/Users/dagro91p/OneDrive - University of Otago/Work/ORCA/orcaIntranetWebsite/orcaDatabase/orcaDatabaseImages/orcaDBIntroScreen.jpg){#fig-orcaIntroScreen}
+
+
+The view upon entering the admin screen can be seen in @fig-orcaIntroScreen

@@ -8,11 +8,12 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: orcaDatabase/orcaDatabaseMain.qmd
+        text: "ORCA Database"
       - about.qmd
   sidebar: 
     contents: 
-      - section: "ORCA Database"
-        contents: orcaDatabase/orcaDatabaseMain
+      - orcaDatabase/orcaDatabaseMain.qmd
 format:
   html:
     theme:
@@ -20,6 +21,7 @@ format:
       - brand
     css: styles.css
     toc: true
-
+  pdf: 
+    toc: true
 editor: visual
 
