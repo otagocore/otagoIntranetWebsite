@@ -1,13 +1,71 @@
 ---
 title: "ORCA Sample Management Database "
 ---
+```{r}
+library(knitr)
 
-# Introduction
 
-Datebase can only be accessed on-campus? at the following website <https://orca.otago.nz/orca>. This site provides an overview of the samples contained in the Sample Database.
+
+```
+
+## Introduction
+
+The admin screen of the ORCA Sample Management Database can only be accessed on-campus at <https://orca.otago.nz/orca>. This page offers an overview of all the samples contained in the Sample Database.
 
 To enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following <https://orca.otago.nz/orca/admin>
 
 ![Introductory screen for the ORCA Sample Database](orcaDatabase/orcaDatabaseImages/orcaDBIntroScreen.jpg){#fig-orcaIntroScreen}
 
 The view upon entering the admin screen can be seen in @fig-orcaIntroScreen
+
+
+## Adding Data to ORCA Sample Management Database
+
+### Inital Steps
+
+
+You will need to check that some of the fundamental data for the samples you are entering int the database has already been entered e.g. principal scientist, coring platform, program etc. If this data is not in the in the database it will need to be enteed prior to entering the sample information. 
+
+For example, the if the *Principals* link in @fig-orcaDbPrincipalMain is selected, a list of all the Principal Investigators (PI) already in the system will open (See @fig-orcaDbPrincipalMain-1). If the PI for the samples being entered is not on this list, they will need to be entered. Select the *Add* button in the top right corner of the screen (See @fig-orcaDbPrincipalMain-1) and a data entry screen to enter the new PI will open (See @fig-orcaDbPrincipalMain-2). Fill out the required information and select on *Save* to enter the data.
+
+```{r}
+#| label: fig-orcaDbPrincipalMain
+#| layout-ncol: 2
+#| out-width: c(60%','40%')
+#| fig-cap: "The windows that appear when the a new PI is being added to the database" 
+#| fig-subcap: 
+#| - "The main window showing the PI's in the system"
+#| - "The window that appears after Add is selected in the main PI window. Details of additonal PI's can be added here"
+
+
+include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbAddPrincipal.jpg")
+include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbAddPrincipalDets.jpg")
+```
+### Enter Sample Data for samples that follow the ORCA naming convention
+
+All sample sites will have data entered the Expedition, Site and Drop tables
+
+#### Expedition
+
+
+#### Site 
+
+All sites will require the Expedition to be selected from the drop-down, a 3 Letter Location Code e.g DUS shall be entered into the Location Code field and 3 digit Site Number e.g 001 shall be entered into the Identifier field (See @fig-orcaDbSiteData-1). 
+
+If the site is not a long core then click save at the bottom of the screen to save the data into the Site table    
+
+@fig-orcaDbSiteData-1 indicates the fields that must be filled out if a long core similar to IODP cores, LOCH Hydraulic Piston Core or the Uwitec Corer, is being collected at the site, the Site Latitude and Longitude shall also be entered in Decimal Degrees.  A Water Depth should also be entered into this table 
+
+```{r}
+#| label: fig-orcaDbSiteData
+#| layout-ncol: 2
+#| out-width: c(50%','50%')
+#| fig-cap: "Entering the Site data into the database" 
+#| fig-subcap: 
+#| - "The site data that must be entered for all sites except long cores"
+#| - "The site data required for long cores "
+
+
+include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbSiteData.jpg")
+include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbSiteDataLongCore.jpg")
+```

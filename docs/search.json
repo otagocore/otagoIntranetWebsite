@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "mybook",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n\n[1] 2",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>orcaIntranetWebsite</span>"
     ]
@@ -14,7 +14,27 @@
     "href": "orcaDatabaseMain.html",
     "title": "2  ORCA Sample Management Database",
     "section": "",
-    "text": "3 Introduction\nDatebase can only be accessed on-campus? at the following website https://orca.otago.nz/orca. This site provides an overview of the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\n\n\n\n\n\n\nFigure 3.1: Introductory screen for the ORCA Sample Database\n\n\n\nThe view upon entering the admin screen can be seen in Figure 3.1",
+    "text": "2.1 Introduction\nThe admin screen of the ORCA Sample Management Database can only be accessed on-campus at https://orca.otago.nz/orca. This page offers an overview of all the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\nThe view upon entering the admin screen can be seen in Figure 2.1",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+    ]
+  },
+  {
+    "objectID": "orcaDatabaseMain.html#introduction",
+    "href": "orcaDatabaseMain.html#introduction",
+    "title": "2  ORCA Sample Management Database",
+    "section": "",
+    "text": "Figure 2.1: Introductory screen for the ORCA Sample Database",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+    ]
+  },
+  {
+    "objectID": "orcaDatabaseMain.html#adding-data-to-orca-sample-management-database",
+    "href": "orcaDatabaseMain.html#adding-data-to-orca-sample-management-database",
+    "title": "2  ORCA Sample Management Database",
+    "section": "2.2 Adding Data to ORCA Sample Management Database",
+    "text": "2.2 Adding Data to ORCA Sample Management Database\n\n2.2.1 Inital Steps\nYou will need to check that some of the fundamental data for the samples you are entering int the database has already been entered e.g. principal scientist, coring platform, program etc. If this data is not in the in the database it will need to be enteed prior to entering the sample information.\nFor example, the if the Principals link in Figure 2.2 is selected, a list of all the Principal Investigators (PI) already in the system will open (See Figure 2.2 (a)). If the PI for the samples being entered is not on this list, they will need to be entered. Select the Add button in the top right corner of the screen (See Figure 2.2 (a)) and a data entry screen to enter the new PI will open (See Figure 2.2 (b)). Fill out the required information and select on Save to enter the data.\n\n\n\n\n\n\n\n\n\n\n\n(a) The main window showing the PI’s in the system\n\n\n\n\n\n\n\n\n\n\n\n(b) The window that appears after Add is selected in the main PI window. Details of additonal PI’s can be added here\n\n\n\n\n\n\n\nFigure 2.2: The windows that appear when the a new PI is being added to the database\n\n\n\n\n\n2.2.2 Enter Sample Data for samples that follow the ORCA naming convention\nAll sample sites will have data entered the Expedition, Site and Drop tables\n\n2.2.2.1 Expedition\n\n\n2.2.2.2 Site\nAll sites will require the Expedition to be selected from the drop-down, a 3 Letter Location Code e.g DUS shall be entered into the Location Code field and 3 digit Site Number e.g 001 shall be entered into the Identifier field (See Figure 2.3 (a)).\nIf the site is not a long core then click save at the bottom of the screen to save the data into the Site table\nFigure 2.3 (a) indicates the fields that must be filled out if a long core similar to IODP cores, LOCH Hydraulic Piston Core or the Uwitec Corer, is being collected at the site, the Site Latitude and Longitude shall also be entered in Decimal Degrees. A Water Depth should also be entered into this table\n\n\n\n\n\n\n\n\n\n\n\n(a) The site data that must be entered for all sites except long cores\n\n\n\n\n\n\n\n\n\n\n\n(b) The site data required for long cores\n\n\n\n\n\n\n\nFigure 2.3: Entering the Site data into the database",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
     ]
