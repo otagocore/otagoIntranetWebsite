@@ -7,9 +7,9 @@ knitr:
     warning: false
     message: false
 book:
-  title: "mybook"
-  author: "Jane Doe"
-  date: "8/18/2021"
+  title: "Otago Repository for Core Analysis Operating Manual"
+  author: "Bob Dagg"
+  date: "23/01/2026"
   downloads: [pdf,epub]
   chapters:
     - index.qmd

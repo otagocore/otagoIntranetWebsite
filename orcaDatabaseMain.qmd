@@ -41,23 +41,41 @@ For example, the if the *Principals* link in @fig-orcaDbPrincipalMain is selecte
 include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbAddPrincipal.jpg")
 include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbAddPrincipalDets.jpg")
 ```
-### Enter Sample Data for samples that follow the ORCA naming convention
+### Enter data for samples that follow the ORCA naming convention
 
+
+#### Data required for all samples
 All sample sites will have data entered the Expedition, Site and Drop tables
 
-#### Expedition
+##### Expedition Table
 
 
-#### Site 
+##### Site Table
 
-All sites will require the Expedition to be selected from the drop-down, a 3 Letter Location Code e.g DUS shall be entered into the Location Code field and 3 digit Site Number e.g 001 shall be entered into the Identifier field (See @fig-orcaDbSiteData-1). 
+To enter data into the Site table select *Sites* from the **Site Administration** window and Select *Add Site*
 
-If the site is not a long core then click save at the bottom of the screen to save the data into the Site table    
+Standard sites will require the following information to be entered
 
-@fig-orcaDbSiteData-1 indicates the fields that must be filled out if a long core similar to IODP cores, LOCH Hydraulic Piston Core or the Uwitec Corer, is being collected at the site, the Site Latitude and Longitude shall also be entered in Decimal Degrees.  A Water Depth should also be entered into this table 
+1. An expedition to be selected from the drop-down, 
+2. a 3 Letter Location Code e.g DUS shall be entered into the Location Code field 
+3. 3 digit Site Number e.g 001 shall be entered into the Identifier field 
+
+The fields that must be filled are indicated in red in @fig-orcaDbSite-1.
+
+Click save at the bottom of the page to save the data into the Site table. 
+
+For a site where the sample being collected is a long core, that is, the sampling tool is entering the same hole multiple times and collecting numerous core sections to increase the sampling depth e.g. IODP core collected off the Joides Resolution, the Ohau core collected using a Hydraulic Piston Corer, the UoO Uwitec corer etc.
+
+The additional fields that must be filled out in the event a long core is collected are 
+
+4. Latitude (dd.dddddd)
+5. Longitude (ddd.ddddd)
+6. Water depth (m)
+
+These fields are indicated in blue in @fig-orcaDbSite-2. 
 
 ```{r}
-#| label: fig-orcaDbSiteData
+#| label: fig-orcaDbSite
 #| layout-ncol: 2
 #| out-width: c(50%','50%')
 #| fig-cap: "Entering the Site data into the database" 
@@ -66,6 +84,57 @@ If the site is not a long core then click save at the bottom of the screen to sa
 #| - "The site data required for long cores "
 
 
-include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbSiteData.jpg")
-include_graphics("orcaDatabase/orcaDatabaseImages/orcaDbSiteDataLongCore.jpg")
+include_graphics("orcaDatabase/orcaDatabaseImages/finalImage/orcaDbSiteStd.png")
+include_graphics("orcaDatabase/orcaDatabaseImages/finalImage/orcaDbSiteLongCore.png")
 ```
+
+##### Drop Table
+
+To enter data into the Drop table select *Sites* from the **Site Administration** window and Select *Add Drop*
+
+
+Standard drops will require the following information to be entered
+
+1. A site to be selected from the drop-down
+2. Select the device being used at the site from the drop-down e.g. PST
+3. The date of the drop, if the drop date is unknow enter 1900-01-01
+4. The time of the drop, if drop time is unknown enter 00:00:00
+5. The sample number,this is a 2 digit number.
+6. Latitude (dd.dddddd)
+7. Longitude (ddd.ddddd)
+8. Water depth (m)
+
+The fields that must be filled are indicated in red in @fig-orcaDbDrop-1.
+
+
+In the event a long core is collected at the site, the latitude,longitude and water depth should not be entered into this table, as it will already have been entered into the site table
+
+The required fields for the drop table are
+
+
+1. A site to be selected from the drop-down
+2. Select the device being used at the site from the drop-down e.g. PST
+3. The date of the drop, if the drop date is unknow enter 1900-01-01
+4. The time of the drop, if drop time is unknown enter 00:00:00
+5. The sample number,this is a 2 digit number.
+
+Ther additional field required t be filled out when collecting a long is 
+
+6. Enter a Hole Id for the site. A for the first hole at a site B for the second hole at the site etc. If the rig moves to a new site start at A again
+
+```{r}
+#| label: fig-orcaDbDrop
+#| layout-ncol: 2
+#| out-width: c(50%','50%')
+#| fig-cap: "Entering the Drop data into the database" 
+#| fig-subcap: 
+#| - "The drop data that must be entered for all sites except long cores"
+#| - "The drop data required for long cores "
+
+
+include_graphics("orcaDatabase/orcaDatabaseImages/finalImage/orcaDbDropStd.png")
+include_graphics("orcaDatabase/orcaDatabaseImages/finalImage/orcaDbDropLongCore.png")
+```
+
+
+
