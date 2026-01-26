@@ -1,0 +1,15 @@
+flowchart TD
+    ex(**Expedition Data** <br> Name, Acronym, PI, Program, Platform, Start and End Date) -->lc{Was a Long Core Collected}
+    lc-->ylc((**Yes**))
+    lc-->nlc((No))
+    ylc-->stylc(**Site Table** <br> Add Expedition,Site Code, Site Number, Lat,Long, Water Depth to Site Table)
+    nlc-->stnlc(**Site Table** <br>Add Expedition,Site Code, Site Number only )
+    stylc-->dtylc(**Drop Table** <br> Add Site, Device, Date and Time of Drop, Sample No)
+    stnlc-->dtnlc(**Drop Table** <br> Add Site, Device, Date and Time of Drop, Sample No, Lat, Long, Water Depth )
+    dtylc-->samp(Go to Sample Table or Core Table )
+    dtnlc-->samp
+
+    classDef green fill:#89F336,stroke:#333,stroke-width:2px, color:#252525
+    classDef red fill:#FF2C2C,stroke:#333,stroke-width:2px, color:#252525
+    class ylc green
+    class nlc red

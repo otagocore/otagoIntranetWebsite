@@ -10,33 +10,83 @@
     ]
   },
   {
+    "objectID": "introduction.html",
+    "href": "introduction.html",
+    "title": "2  Introduction",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+    ]
+  },
+  {
+    "objectID": "healthAndSafety.html",
+    "href": "healthAndSafety.html",
+    "title": "3  Health and Safety",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Health and Safety</span>"
+    ]
+  },
+  {
     "objectID": "orcaDatabaseMain.html",
     "href": "orcaDatabaseMain.html",
-    "title": "2  ORCA Sample Management Database",
+    "title": "4  ORCA Sample Management Database",
     "section": "",
-    "text": "2.1 Introduction\nThe admin screen of the ORCA Sample Management Database can only be accessed on-campus at https://orca.otago.nz/orca. This page offers an overview of all the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\nThe view upon entering the admin screen can be seen in Figure 2.1",
+    "text": "4.1 Introduction\nThe admin screen of the ORCA Sample Management Database can only be accessed on-campus at https://orca.otago.nz/orca. This page offers an overview of all the samples contained in the Sample Database.\nTo enter sample information into the database the administration screen need to be entered. This screen can be accessed using the following https://orca.otago.nz/orca/admin\nThe view upon entering the admin screen can be seen in Figure 4.1",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
     ]
   },
   {
     "objectID": "orcaDatabaseMain.html#introduction",
     "href": "orcaDatabaseMain.html#introduction",
-    "title": "2  ORCA Sample Management Database",
+    "title": "4  ORCA Sample Management Database",
     "section": "",
-    "text": "Figure 2.1: Introductory screen for the ORCA Sample Database",
+    "text": "Figure 4.1: Introductory screen for the ORCA Sample Database",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+    ]
+  },
+  {
+    "objectID": "orcaDatabaseMain.html#workflow",
+    "href": "orcaDatabaseMain.html#workflow",
+    "title": "4  ORCA Sample Management Database",
+    "section": "4.2 Workflow",
+    "text": "4.2 Workflow\n\n\n\n\n\nflowchart TD\n    ex(**Expedition Data** &lt;br&gt; Name, Acronym, PI, Program, Platform, Start and End Date) --&gt;lc{Was a Long Core Collected}\n    lc--&gt;ylc((**Yes**))\n    lc--&gt;nlc((No))\n    ylc--&gt;stylc(**Site Table** &lt;br&gt; Add Expedition,Site Code, Site Number, Lat,Long, Water Depth to Site Table)\n    nlc--&gt;stnlc(**Site Table** &lt;br&gt;Add Expedition,Site Code, Site Number only )\n    stylc--&gt;dtylc(**Drop Table** &lt;br&gt; Add Site, Device, Date and Time of Drop, Sample No)\n    stnlc--&gt;dtnlc(**Drop Table** &lt;br&gt; Add Site, Device, Date and Time of Drop, Sample No, Lat, Long, Water Depth )\n    dtylc--&gt;samp(Go to Sample Table or Core Table )\n    dtnlc--&gt;samp\n\n    classDef green fill:#89F336,stroke:#333,stroke-width:2px, color:#252525\n    classDef red fill:#FF2C2C,stroke:#333,stroke-width:2px, color:#252525\n    class ylc green\n    class nlc red",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
     ]
   },
   {
     "objectID": "orcaDatabaseMain.html#adding-data-to-orca-sample-management-database",
     "href": "orcaDatabaseMain.html#adding-data-to-orca-sample-management-database",
-    "title": "2  ORCA Sample Management Database",
-    "section": "2.2 Adding Data to ORCA Sample Management Database",
-    "text": "2.2 Adding Data to ORCA Sample Management Database\n\n2.2.1 Inital Steps\nYou will need to check that some of the fundamental data for the samples you are entering int the database has already been entered e.g. principal scientist, coring platform, program etc. If this data is not in the in the database it will need to be enteed prior to entering the sample information.\nFor example, the if the Principals link in Figure 2.2 is selected, a list of all the Principal Investigators (PI) already in the system will open (See Figure 2.2 (a)). If the PI for the samples being entered is not on this list, they will need to be entered. Select the Add button in the top right corner of the screen (See Figure 2.2 (a)) and a data entry screen to enter the new PI will open (See Figure 2.2 (b)). Fill out the required information and select on Save to enter the data.\n\n\n\n\n\n\n\n\n\n\n\n(a) The main window showing the PI’s in the system\n\n\n\n\n\n\n\n\n\n\n\n(b) The window that appears after Add is selected in the main PI window. Details of additonal PI’s can be added here\n\n\n\n\n\n\n\nFigure 2.2: The windows that appear when the a new PI is being added to the database\n\n\n\n\n\n2.2.2 Enter data for samples that follow the ORCA naming convention\n\n2.2.2.1 Data required for all samples\nAll sample sites will have data entered the Expedition, Site and Drop tables\n\n2.2.2.1.1 Expedition Table\n\n\n2.2.2.1.2 Site Table\nTo enter data into the Site table select Sites from the Site Administration window and Select Add Site\nStandard sites will require the following information to be entered\n\nAn expedition to be selected from the drop-down,\na 3 Letter Location Code e.g DUS shall be entered into the Location Code field\n3 digit Site Number e.g 001 shall be entered into the Identifier field\n\nThe fields that must be filled are indicated in red in Figure 2.3 (a).\nClick save at the bottom of the page to save the data into the Site table.\nFor a site where the sample being collected is a long core, that is, the sampling tool is entering the same hole multiple times and collecting numerous core sections to increase the sampling depth e.g. IODP core collected off the Joides Resolution, the Ohau core collected using a Hydraulic Piston Corer, the UoO Uwitec corer etc.\nThe additional fields that must be filled out in the event a long core is collected are\n\nLatitude (dd.dddddd)\nLongitude (ddd.ddddd)\nWater depth (m)\n\nThese fields are indicated in blue in Figure 2.3 (b).\n\n\n\n\n\n\n\n\n\n\n\n(a) The site data that must be entered for all sites except long cores\n\n\n\n\n\n\n\n\n\n\n\n(b) The site data required for long cores\n\n\n\n\n\n\n\nFigure 2.3: Entering the Site data into the database\n\n\n\n\n\n2.2.2.1.3 Drop Table\nTo enter data into the Drop table select Sites from the Site Administration window and Select Add Drop\nStandard drops will require the following information to be entered\n\nA site to be selected from the drop-down\nSelect the device being used at the site from the drop-down e.g. PST\nThe date of the drop, if the drop date is unknow enter 1900-01-01\nThe time of the drop, if drop time is unknown enter 00:00:00\nThe sample number,this is a 2 digit number.\nLatitude (dd.dddddd)\nLongitude (ddd.ddddd)\nWater depth (m)\n\nThe fields that must be filled are indicated in red in Figure 2.4 (a).\nIn the event a long core is collected at the site, the latitude,longitude and water depth should not be entered into this table, as it will already have been entered into the site table\nThe required fields for the drop table are\n\nA site to be selected from the drop-down\nSelect the device being used at the site from the drop-down e.g. PST\nThe date of the drop, if the drop date is unknow enter 1900-01-01\nThe time of the drop, if drop time is unknown enter 00:00:00\nThe sample number,this is a 2 digit number.\n\nTher additional field required t be filled out when collecting a long is\n\nEnter a Hole Id for the site. A for the first hole at a site B for the second hole at the site etc. If the rig moves to a new site start at A again\n\n\n\n\n\n\n\n\n\n\n\n\n(a) The drop data that must be entered for all sites except long cores\n\n\n\n\n\n\n\n\n\n\n\n(b) The drop data required for long cores\n\n\n\n\n\n\n\nFigure 2.4: Entering the Drop data into the database",
+    "title": "4  ORCA Sample Management Database",
+    "section": "4.3 Adding Data to ORCA Sample Management Database",
+    "text": "4.3 Adding Data to ORCA Sample Management Database\n\n4.3.1 Inital Steps\nYou will need to check that some of the fundamental data for the samples you are entering int the database has already been entered e.g. principal scientist, coring platform, program etc. If this data is not in the in the database it will need to be enteed prior to entering the sample information.\nFor example, the if the Principals link in Figure 4.2 is selected, a list of all the Principal Investigators (PI) already in the system will open (See Figure 4.2 (a)). If the PI for the samples being entered is not on this list, they will need to be entered. Select the Add button in the top right corner of the screen (See Figure 4.2 (a)) and a data entry screen to enter the new PI will open (See Figure 4.2 (b)). Fill out the required information and select on Save to enter the data.\n\n\n\n\n\n\n\n\n\n\n\n(a) The main window showing the PI’s in the system\n\n\n\n\n\n\n\n\n\n\n\n(b) The window that appears after Add is selected in the main PI window. Details of additonal PI’s can be added here\n\n\n\n\n\n\n\nFigure 4.2: The windows that appear when the a new PI is being added to the database\n\n\n\n\n\n4.3.2 Enter data for samples that follow the ORCA naming convention\n\n4.3.2.1 Data required for all samples\nAll sample sites will have data entered the Expedition, Site and Drop tables\n\n4.3.2.1.1 Expedition Table\n\n\n4.3.2.1.2 Site Table\nTo enter data into the Site table select Sites from the Site Administration window and Select Add Site\nStandard sites will require the following information to be entered\n\nAn expedition to be selected from the drop-down,\na 3 Letter Location Code e.g DUS shall be entered into the Location Code field\n3 digit Site Number e.g 001 shall be entered into the Identifier field\n\nThe fields that must be filled are indicated in red in Figure 4.3 (a).\nClick save at the bottom of the page to save the data into the Site table.\nFor a site where the sample being collected is a long core, that is, the sampling tool is entering the same hole multiple times and collecting numerous core sections to increase the sampling depth e.g. IODP core collected off the Joides Resolution, the Ohau core collected using a Hydraulic Piston Corer, the UoO Uwitec corer etc.\nThe additional fields that must be filled out in the event a long core is collected are\n\nLatitude (dd.dddddd)\nLongitude (ddd.ddddd)\nWater depth (m)\n\nThese fields are indicated in blue in Figure 4.3 (b).\n\n\n\n\n\n\n\n\n\n\n\n(a) The site data that must be entered for all sites except long cores\n\n\n\n\n\n\n\n\n\n\n\n(b) The site data required for long cores\n\n\n\n\n\n\n\nFigure 4.3: Entering the Site data into the database\n\n\n\n\n\n4.3.2.1.3 Drop Table\nTo enter data into the Drop table select Sites from the Site Administration window and Select Add Drop\nStandard drops will require the following information to be entered\n\nA site to be selected from the drop-down\nSelect the device being used at the site from the drop-down e.g. PST\nThe date of the drop, if the drop date is unknow enter 1900-01-01\nThe time of the drop, if drop time is unknown enter 00:00:00\nThe sample number,this is a 2 digit number.\nLatitude (dd.dddddd)\nLongitude (ddd.ddddd)\nWater depth (m)\n\nThe fields that must be filled are indicated in red in Figure 4.4 (a).\nIn the event a long core is collected at the site, the latitude,longitude and water depth should not be entered into this table, as it will already have been entered into the site table\nThe required fields for the drop table are\n\nA site to be selected from the drop-down\nSelect the device being used at the site from the drop-down e.g. PST\nThe date of the drop, if the drop date is unknow enter 1900-01-01\nThe time of the drop, if drop time is unknown enter 00:00:00\nThe sample number,this is a 2 digit number.\n\nTher additional field required t be filled out when collecting a long is\n\nEnter a Hole Id for the site. A for the first hole at a site B for the second hole at the site etc. If the rig moves to a new site start at A again\n\n\n\n\n\n\n\n\n\n\n\n\n(a) The drop data that must be entered for all sites except long cores\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) The drop data required for long cores\n\n\n\n\n\n\n\nFigure 4.4: Entering the Drop data into the database\n\n\n\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>ORCA Sample Management Database</span>"
+    ]
+  },
+  {
+    "objectID": "boxscanMscl.html",
+    "href": "boxscanMscl.html",
+    "title": "6  Geotek Boxscan MSCL",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Geotek Boxscan MSCL</span>"
+    ]
+  },
+  {
+    "objectID": "itrax.html",
+    "href": "itrax.html",
+    "title": "7  Itrax XRF",
+    "section": "",
+    "text": "About this site\n\n\n[1] 2",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Itrax XRF</span>"
     ]
   }
 ]

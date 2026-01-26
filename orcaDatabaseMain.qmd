@@ -3,6 +3,8 @@ title: "ORCA Sample Management Database "
 ---
 ```{r}
 library(knitr)
+library(DiagrammeR)
+library(quarto)
 
 
 
@@ -17,6 +19,16 @@ To enter sample information into the database the administration screen need to 
 ![Introductory screen for the ORCA Sample Database](orcaDatabase/orcaDatabaseImages/orcaDBIntroScreen.jpg){#fig-orcaIntroScreen}
 
 The view upon entering the admin screen can be seen in @fig-orcaIntroScreen
+
+
+## Workflow 
+
+
+
+```{mermaid}
+
+{{< include orcaDatabase/orcaDbflowcharts/orcaDbWorkflow.mmd >}}
+```
 
 
 ## Adding Data to ORCA Sample Management Database
@@ -124,7 +136,7 @@ Ther additional field required t be filled out when collecting a long is
 
 ```{r}
 #| label: fig-orcaDbDrop
-#| layout-ncol: 2
+#| layout-ncol: 1
 #| out-width: c(50%','50%')
 #| fig-cap: "Entering the Drop data into the database" 
 #| fig-subcap: 
@@ -137,4 +149,12 @@ include_graphics("orcaDatabase/orcaDatabaseImages/finalImage/orcaDbDropLongCore.
 ```
 
 
+```{mermaid}
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+
+```
 

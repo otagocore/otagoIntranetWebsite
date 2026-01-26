@@ -13,8 +13,12 @@ book:
   downloads: [pdf,epub]
   chapters:
     - index.qmd
+    - introduction.qmd
+    - healthAndSafety.qmd
     - orcaDatabaseMain.qmd
-    - geotek.qmd
+    - geotekMscl.qmd
+    - boxscanMscl.qmd
+    - itrax.qmd
 lightbox: True
 format:
   html:
